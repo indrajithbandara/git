@@ -70,6 +70,20 @@ color: grey;}
 p>a {font-size: 24px;}
  .baskerville { font-family: "Baskerville Old Face";}
  img { width:120px; }
+      
+      .videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
     </style>
   </head>
 
@@ -183,10 +197,9 @@ p>a {font-size: 24px;}
 
       </div><!-- /.row -->
     
-       <div class="row">
-     <div class="col-md-6 offset-3" style="margin-top: 50px;">
-https://www.youtube.com/embed/5cZ0iG2JHBk
-     </div>
+      <div class="videoWrapper">
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/5cZ0iG2JHBk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>     </div>
     </div>
 
     </div><!-- /.container -->
